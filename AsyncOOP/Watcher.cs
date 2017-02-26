@@ -26,6 +26,7 @@ namespace AsyncOOP
             return this;
         }
 
+        // Here we make use of the Asynchronous Factory pattern, to enable async operations to be awaited using the constructor.
         public static Task<Watcher> CreateAsync()
         {
             var result = new Watcher();
